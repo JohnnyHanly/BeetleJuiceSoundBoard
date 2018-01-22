@@ -1,5 +1,6 @@
 package com.example.johnnyhanly.beetlejuicesoundboard;
 
+import android.media.MediaPlayer;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -28,7 +29,7 @@ setTitle("");
         final ViewPager viewPager= findViewById(R.id.viewpager);
 
         final PagerAdapter adapter= new com.example.johnnyhanly.beetlejuicesoundboard.PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
-
+      viewPager.setAdapter(adapter);
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

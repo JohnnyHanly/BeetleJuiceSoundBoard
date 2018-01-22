@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ClassicFragment">
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
     <!-- TODO: Update blank fragment layout -->
-
 
     <Button
         android:id="@+id/b_age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="153dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="60dp"
         android:text="I'M 45 BABY" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/b_weight"
+        android:layout_width="149dp"
+        android:layout_height="119dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/b_age"
+        android:layout_marginEnd="26dp"
+        android:text="I'm 250 POUNDS" />
+
+</RelativeLayout>
+
