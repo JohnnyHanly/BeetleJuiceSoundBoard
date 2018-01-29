@@ -1,8 +1,12 @@
 package com.example.johnnyhanly.beetlejuicesoundboard;
 
+import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.res.ResourcesCompat;
+import android.text.Layout;
 
 /**
  * Created by Johnny Hanly on 1/21/2018.
@@ -24,6 +28,8 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
                 ClassicFragment tab1= new ClassicFragment();
                 return tab1;
             case 1:
+
+
                 InsultsFragment tab2= new InsultsFragment();
                 return tab2;
             case 2:

@@ -1,14 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MiscFragment">
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/b_laughter"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="LAUGHTER"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_ifuck"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/b_ifuck"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="I FUCK 24 HOURS A DAY"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_laughter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <Button
+        android:id="@+id/b_crack"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="I SMOKE COKE"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_lose"
+        app:layout_constraintTop_toBottomOf="@id/b_laughter" />
+
+    <Button
+        android:id="@+id/b_lose"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="I YOU LOSE YOU WIN"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_crack"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_ifuck" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="87dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

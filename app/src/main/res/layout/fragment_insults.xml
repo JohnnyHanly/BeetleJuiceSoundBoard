@@ -1,14 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".InsultsFragment">
+
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<Button
+    android:id="@+id/b_takeyou"
+    android:layout_width="175dp"
+    android:layout_height="130dp"
+    android:alpha=".5"
+    android:backgroundTint="@color/red"
+    android:text="I'LL TAKE YOU LIKE A MAN"
+    android:textColor="@color/white"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/b_eskimos"
+    app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+<Button
+    android:id="@+id/b_eskimos"
+    android:layout_width="175dp"
+    android:layout_height="130dp"
+    android:alpha=".5"
+    android:backgroundTint="@color/red"
+    android:text="I HATE ESKIMOS"
+    android:textColor="@color/white"
+    app:layout_constraintLeft_toRightOf="@id/b_takeyou"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/guideline" />
+    <Button
+        android:id="@+id/b_jews"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="I HATES JEWS"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_whites"
+        app:layout_constraintTop_toBottomOf="@id/b_takeyou" />
+
+    <Button
+        android:id="@+id/b_whites"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="WHITES? HATE 'EM"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_jews"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_eskimos" />
+
+    <Button
+        android:id="@+id/b_killaguy"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="BAD HANDS"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_tough"
+        app:layout_constraintTop_toBottomOf="@id/b_jews" />
+
+    <Button
+        android:id="@+id/b_tough"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="I'M IS TOUGH"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_killaguy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_whites" />
+
+    <android.support.constraint.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="87dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
