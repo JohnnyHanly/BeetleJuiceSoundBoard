@@ -1,86 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-    <!-- TODO: Update blank fragment layout -->
-
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
+    android:scrollbars="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-<Button
-    android:id="@+id/b_takeyou"
-    android:layout_width="175dp"
-    android:layout_height="130dp"
-    android:alpha=".5"
     android:backgroundTint="@color/red"
-    android:text="I'LL TAKE YOU LIKE A MAN"
-    android:textColor="@color/white"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toLeftOf="@id/b_eskimos"
-    app:layout_constraintTop_toBottomOf="@id/guideline" />
 
-<Button
-    android:id="@+id/b_eskimos"
-    android:layout_width="175dp"
-    android:layout_height="130dp"
-    android:alpha=".5"
-    android:backgroundTint="@color/red"
-    android:text="I HATE ESKIMOS"
-    android:textColor="@color/white"
-    app:layout_constraintLeft_toRightOf="@id/b_takeyou"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/guideline" />
     <Button
-        android:id="@+id/b_jews"
+        android:id="@+id/b_takeyou"
         android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:alpha=".5"
         android:backgroundTint="@color/red"
-        android:text="I HATES JEWS"
+        android:text="I'LL TAKE YOU LIKE A MAN"
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/b_whites"
-        app:layout_constraintTop_toBottomOf="@id/b_takeyou" />
+        app:layout_constraintRight_toLeftOf="@id/b_badhands"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
 
     <Button
-        android:id="@+id/b_whites"
+        android:id="@+id/b_badhands"
         android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:alpha=".5"
         android:backgroundTint="@color/red"
-        android:text="WHITES? HATE 'EM"
+        android:text="KILL A GUY WITH MY BAD HANDS"
         android:textColor="@color/white"
-        app:layout_constraintLeft_toRightOf="@id/b_jews"
+        app:layout_constraintLeft_toRightOf="@id/b_takeyou"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/b_eskimos" />
-
-    <Button
-        android:id="@+id/b_killaguy"
-        android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:alpha=".5"
-        android:backgroundTint="@color/red"
-        android:text="BAD HANDS"
-        android:textColor="@color/white"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/b_tough"
-        app:layout_constraintTop_toBottomOf="@id/b_jews" />
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
 
     <Button
         android:id="@+id/b_tough"
         android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:alpha=".5"
+        android:layout_height="100dp"
         android:backgroundTint="@color/red"
         android:text="I'M IS TOUGH"
         android:textColor="@color/white"
-        app:layout_constraintLeft_toRightOf="@id/b_killaguy"
+        android:alpha=".5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_hospital"
+        app:layout_constraintTop_toBottomOf="@id/b_takeyou" />
+
+    <Button
+        android:id="@+id/b_hospital"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="SEND EM TO THE HOSPITAL"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_tough"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/b_whites" />
+        app:layout_constraintTop_toBottomOf="@id/b_badhands" />
+
+    <Button
+        android:id="@+id/b_fatboy"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="FAT BOY"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_FU"
+        app:layout_constraintTop_toBottomOf="@id/b_tough" />
+
+    <Button
+        android:id="@+id/b_FU"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/red"
+        android:layout_alignStart="@+id/b_vomit"
+        android:alpha=".5"
+        android:textColor="@color/white"
+        android:text="F U"
+        app:layout_constraintLeft_toRightOf="@id/b_fatboy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_hospital" />
+
+    <Button
+        android:id="@+id/b_suck"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="SUCK YO OWN"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_knock"
+        app:layout_constraintTop_toBottomOf="@id/b_fatboy" />
+
+    <Button
+        android:id="@+id/b_knock"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/b_spanish"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="YA PIECE A GARBAGE"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_suck"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_FU" />
+
+    <Button
+        android:id="@+id/b_remember"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="REMEMBER THAT"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_situation"
+        app:layout_constraintTop_toBottomOf="@id/b_suck" />
+
+    <Button
+        android:id="@+id/b_situation"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/b_spanish"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="I'LL PUT YOU IN  A SITUATION"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_remember"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_knock" />
+    <Button
+        android:id="@+id/b_psycho"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="I'M A PSYCHOPATH"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_watcha"
+        app:layout_constraintTop_toBottomOf="@id/b_remember" />
+
+    <Button
+        android:id="@+id/b_watcha"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/b_spanish"
+        android:alpha=".5"
+        android:backgroundTint="@color/red"
+        android:text="WHATCHA GONNA DO ABOUT IT"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_psycho"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_situation" />
 
     <android.support.constraint.Guideline
     android:id="@+id/guideline"

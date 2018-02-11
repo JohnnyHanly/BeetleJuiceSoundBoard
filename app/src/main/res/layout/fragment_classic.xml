@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-    <!-- TODO: Update blank fragment layout -->
-
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="vertical"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <Button
         android:id="@+id/b_me"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
+
+        android:alpha=".6"
+        android:backgroundTint="#247310"
         android:text="ME?"
-        android:backgroundTint="@color/classicColor"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:alpha=".5"
         android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/b_coobee"
         app:layout_constraintTop_toBottomOf="@id/guideline" />
 
     <Button
         android:id="@+id/b_coobee"
         android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:backgroundTint="@color/classicColor"
+        android:layout_height="100dp"
+        android:backgroundTint="#247310"
         android:layout_alignStart="@+id/b_vomit"
         android:text="COO BEE"
         android:textColor="@color/white"
-        android:alpha=".5"
+        android:alpha=".6"
         app:layout_constraintLeft_toRightOf="@id/b_me"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline" />
@@ -39,11 +39,11 @@
     <Button
         android:id="@+id/b_red"
         android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:backgroundTint="@color/classicColor"
-        android:text="SPELL RED"
+        android:layout_height="100dp"
+        android:alpha=".6"
+        android:backgroundTint="#247310"
+        android:text="RED? L-S-T-E-R"
         android:textColor="@color/white"
-        android:alpha=".5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/b_vomit"
         app:layout_constraintTop_toBottomOf="@id/b_me" />
@@ -51,11 +51,11 @@
     <Button
         android:id="@+id/b_vomit"
         android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:text="VOMITTING"
-        android:alpha=".5"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/classicColor"
+        android:alpha=".6"
+        android:textColor="#ffffff"
+        android:backgroundTint="#247310"
         app:layout_constraintLeft_toRightOf="@id/b_red"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/b_coobee" />
@@ -63,12 +63,11 @@
     <Button
         android:id="@+id/b_age"
         android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:alpha=".5"
-        android:backgroundTint="@color/classicColor"
+        android:layout_height="100dp"
+        android:alpha=".6"
+        android:backgroundTint="#247310"
         android:text="I'M 45 BABY"
         android:textColor="@color/white"
-
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/b_weight"
         app:layout_constraintTop_toBottomOf="@id/b_red" />
@@ -76,10 +75,10 @@
     <Button
         android:id="@+id/b_weight"
         android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:backgroundTint="@color/classicColor"
+        android:layout_height="100dp"
+        android:backgroundTint="#247310"
         android:layout_alignStart="@+id/b_vomit"
-        android:alpha=".5"
+        android:alpha=".6"
         android:textColor="@color/white"
         android:text="I'm 250 POUNDS"
         app:layout_constraintLeft_toRightOf="@id/b_age"
@@ -88,9 +87,9 @@
     <Button
         android:id="@+id/b_spanish"
         android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:alpha=".5"
-        android:backgroundTint="@color/classicColor"
+        android:layout_height="100dp"
+        android:alpha=".6"
+        android:backgroundTint="#247310"
         android:text="SPANISH"
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -100,15 +99,63 @@
     <Button
         android:id="@+id/b_chinese"
         android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:backgroundTint="@color/classicColor"
+        android:layout_height="100dp"
+        android:backgroundTint="#247310"
         android:layout_alignStart="@+id/b_spanish"
-        android:alpha=".5"
+        android:alpha=".6"
         android:textColor="@color/white"
         android:text="CHINESE"
         app:layout_constraintLeft_toRightOf="@id/b_age"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/b_weight" />
+    <Button
+        android:id="@+id/b_one"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".6"
+        android:backgroundTint="#247310"
+        android:text="ONE - ONE"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_puerto"
+        app:layout_constraintTop_toBottomOf="@id/b_spanish" />
+
+    <Button
+        android:id="@+id/b_puerto"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/b_spanish"
+        android:alpha=".6"
+        android:backgroundTint="#247310"
+        android:text="I'M PUERTO RICAN"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_one"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_chinese" />
+    <Button
+        android:id="@+id/b_down"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".6"
+        android:backgroundTint="#247310"
+        android:text="I'M DOWN BABY"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_aint"
+        app:layout_constraintTop_toBottomOf="@id/b_one" />
+
+    <Button
+        android:id="@+id/b_aint"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".6"
+        android:backgroundTint="#247310"
+        android:text="AIN'T GOT NOTHING TO DO WITH THIS"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_down"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_puerto" />
+
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

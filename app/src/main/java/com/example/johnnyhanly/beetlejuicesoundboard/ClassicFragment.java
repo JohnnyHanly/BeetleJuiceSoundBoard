@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +27,11 @@ public class ClassicFragment extends Fragment {
     Button bCoobee;
     Button bSpanish;
     Button bChinese;
+    Button bOne;
+    Button bPuerto;
+    Button bDown;
+    Button bAint;
+
     SoundPool classicSoundPool;
     HashMap<Integer, Integer> classicSoundpoolMap;
 
@@ -34,15 +40,20 @@ public class ClassicFragment extends Fragment {
         classicSoundPool = new SoundPool(8, AudioManager.STREAM_MUSIC, 100);
         classicSoundpoolMap = new HashMap<Integer, Integer>();
 
-
+        final Vibrator x= (Vibrator)getActivity().getSystemService(Context.VIBRATOR_SERVICE);
         classicSoundpoolMap.put(1, classicSoundPool.load(getActivity(), R.raw.beet_me, 1));
         classicSoundpoolMap.put(2, classicSoundPool.load(getActivity(), R.raw.beet_coobee, 1));
-        classicSoundpoolMap.put(3, classicSoundPool.load(getActivity(), R.raw.beet_spelling, 1));
+        classicSoundpoolMap.put(3, classicSoundPool.load(getActivity(), R.raw.beet_red, 1));
         classicSoundpoolMap.put(4, classicSoundPool.load(getActivity(), R.raw.beet_vomit, 1));
-        classicSoundpoolMap.put(5, classicSoundPool.load(getActivity(), R.raw.beetage, 1));
-        classicSoundpoolMap.put(6, classicSoundPool.load(getActivity(), R.raw.beetweight, 1));
+        classicSoundpoolMap.put(5, classicSoundPool.load(getActivity(), R.raw.beet_age, 1));
+        classicSoundpoolMap.put(6, classicSoundPool.load(getActivity(), R.raw.beet_weight, 1));
         classicSoundpoolMap.put(7, classicSoundPool.load(getActivity(), R.raw.beet_spanish, 1));
         classicSoundpoolMap.put(8, classicSoundPool.load(getActivity(), R.raw.beet_chinese, 1));
+        classicSoundpoolMap.put(9,classicSoundPool.load(getActivity(),R.raw.beet_1,1));
+        classicSoundpoolMap.put(10,classicSoundPool.load(getActivity(),R.raw.beet_puerto,1));
+        classicSoundpoolMap.put(11,classicSoundPool.load(getActivity(),R.raw.beet_down,1));
+        classicSoundpoolMap.put(12,classicSoundPool.load(getActivity(),R.raw.beet_aint,1));
+
 
         bMe = (Button) view.findViewById(R.id.b_me);
         bAge = (Button) view.findViewById(R.id.b_age);
@@ -52,74 +63,102 @@ public class ClassicFragment extends Fragment {
         bCoobee = (Button) view.findViewById(R.id.b_coobee);
         bSpanish = (Button) view.findViewById(R.id.b_spanish);
         bChinese = (Button) view.findViewById(R.id.b_chinese);
+        bOne=(Button) view.findViewById(R.id.b_one);
+        bPuerto= (Button) view.findViewById(R.id.b_puerto);
+        bDown= (Button) view.findViewById(R.id.b_down);
+        bAint= (Button) view.findViewById(R.id.b_aint);
+
 
 
         bMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(1);
+                Play(1,x);
             }
         });
         bCoobee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(2);
+                Play(2,x);
             }
         });
         bRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(3);
+                Play(3,x);
             }
         });
         bVomit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(4);
+                Play(4,x);
             }
         });
         bAge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(5);
+                Play(5,x);
             }
         });
         bWeight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(6);
+                Play(6,x);
             }
         });
-
-
         bSpanish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(7);
+                Play(7,x);
             }
         });
         bChinese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(8);
+                Play(8,x);
             }
         });
-
+        bOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Play(9,x);
+            }
+        });
+        bPuerto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Play(10,x);
+            }
+        });
+        bDown.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Play(11,x);
+    }
+});
+        bAint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Play(12,x);
+            }
+        });
         return view;
     }
 
 
-    public void Play(Integer integer) {
+    public void Play(Integer integer, Vibrator vibrator) {
         AudioManager audioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
         float currentVol = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
         float maxVol = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         float leftVol = currentVol / maxVol;
         float rightVol = currentVol / maxVol;
 
-        for(int i=0;i<=8;i++){
+        for(int i=0;i<=12;i++){
             classicSoundPool.stop(i);
         }
 classicSoundPool.play(integer, leftVol,rightVol,1,0,1f);
+        vibrator.vibrate(10);
     }
+
 
 }

@@ -12,16 +12,25 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
+
 
 public class MainActivity extends AppCompatActivity {
-FloatingActionButton stop;
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar= findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-setTitle("");
+        MobileAds.initialize(this, "ca-app-pub-5391088306797652~2345210904");
+mAdView= findViewById(R.id.adView);
+        AdRequest adRequest =new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        setTitle("");
         Context context=getApplicationContext();
         TabLayout tabLayout= findViewById(R.id.tablayout);
 

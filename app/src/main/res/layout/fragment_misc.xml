@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/b_laughter"
         android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:alpha=".5"
         android:backgroundTint="#8a239e"
         android:text="LAUGHTER"
@@ -21,7 +21,7 @@
     <Button
         android:id="@+id/b_ifuck"
         android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:alpha=".5"
         android:backgroundTint="#8a239e"
         android:text="I FUCK 24 HOURS A DAY"
@@ -33,7 +33,7 @@
     <Button
         android:id="@+id/b_crack"
         android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:alpha=".5"
         android:backgroundTint="#8a239e"
         android:text="I SMOKE COKE"
@@ -45,7 +45,7 @@
     <Button
         android:id="@+id/b_lose"
         android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:alpha=".5"
         android:backgroundTint="#8a239e"
         android:text="I YOU LOSE YOU WIN"
@@ -54,6 +54,96 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/b_ifuck" />
 
+    <Button
+        android:id="@+id/b_drugs"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="DRUGS? NEVER."
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_eskimos"
+        app:layout_constraintTop_toBottomOf="@id/b_crack" />
+
+    <Button
+        android:id="@+id/b_eskimos"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="I HATE ESKIMOS"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_drugs"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_lose" />
+    <Button
+        android:id="@+id/b_jews"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="I HATES JEWS"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_whites"
+        app:layout_constraintTop_toBottomOf="@id/b_drugs" />
+
+    <Button
+        android:id="@+id/b_whites"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="WHITES? I HATE 'EM"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_jews"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_eskimos" />
+    <Button
+        android:id="@+id/b_gay"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="I HATE GAY MARRIAGE"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_women"
+        app:layout_constraintTop_toBottomOf="@id/b_jews" />
+    <Button
+        android:id="@+id/b_women"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="I MAKE WOMENS HAPPY"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_gay"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_whites" />
+    <Button
+        android:id="@+id/b_diet"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="MY DIET IS 250 GRAND"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b_hell"
+        app:layout_constraintTop_toBottomOf="@id/b_gay" />
+    <Button
+        android:id="@+id/b_hell"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:alpha=".5"
+        android:backgroundTint="#8a239e"
+        android:text="HELL NO"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/b_diet"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_women" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
