@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "398479850430",
+    "firebase_url": "https://beetlejuice-soundboard.firebaseio.com",
+    "project_id": "beetlejuice-soundboard",
+    "storage_bucket": "beetlejuice-soundboard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398479850430:android:15780450813208b3",
+        "android_client_info": {
+          "package_name": "com.johnnyhanly.beetlejuicesoundboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398479850430-kuk37u0pf2bsbf6mgd1iqpi143dga5vg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK5RmAIkr1vZVoHlXmVgEj8LR1eld5eHQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

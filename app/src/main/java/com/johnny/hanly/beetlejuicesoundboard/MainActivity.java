@@ -1,16 +1,12 @@
-package com.example.johnnyhanly.beetlejuicesoundboard;
+package com.johnny.hanly.beetlejuicesoundboard;
 
 import android.content.Context;
-import android.media.MediaPlayer;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.Button;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -41,7 +37,7 @@ mAdView= findViewById(R.id.adView);
 
         final ViewPager viewPager= findViewById(R.id.viewpager);
 
-        final PagerAdapter adapter= new com.example.johnnyhanly.beetlejuicesoundboard.PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
+        final PagerAdapter adapter= new com.johnny.hanly.beetlejuicesoundboard.PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
       viewPager.setAdapter(adapter);
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));

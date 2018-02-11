@@ -1,4 +1,4 @@
-package com.example.johnnyhanly.beetlejuicesoundboard;
+package com.johnny.hanly.beetlejuicesoundboard;
 
 import org.junit.Test;
 

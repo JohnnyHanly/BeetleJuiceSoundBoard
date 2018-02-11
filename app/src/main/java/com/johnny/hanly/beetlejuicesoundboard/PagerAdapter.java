@@ -1,12 +1,8 @@
-package com.example.johnnyhanly.beetlejuicesoundboard;
+package com.johnny.hanly.beetlejuicesoundboard;
 
-import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.res.ResourcesCompat;
-import android.text.Layout;
 
 /**
  * Created by Johnny Hanly on 1/21/2018.
