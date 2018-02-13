@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +19,6 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="175dp"
         android:layout_height="100dp"
-
         android:alpha=".6"
         android:backgroundTint="#247310"
         android:text="ME?"
@@ -69,21 +73,9 @@
         android:text="I'M 45 BABY"
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/b_weight"
+        app:layout_constraintRight_toLeftOf="@id/b_spanish"
         app:layout_constraintTop_toBottomOf="@id/b_red" />
 
-    <Button
-        android:id="@+id/b_weight"
-        android:layout_width="175dp"
-        android:layout_height="100dp"
-        android:backgroundTint="#247310"
-        android:layout_alignStart="@+id/b_vomit"
-        android:alpha=".6"
-        android:textColor="@color/white"
-        android:text="I'm 250 POUNDS"
-        app:layout_constraintLeft_toRightOf="@id/b_age"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/b_vomit" />
     <Button
         android:id="@+id/b_spanish"
         android:layout_width="175dp"
@@ -92,9 +84,9 @@
         android:backgroundTint="#247310"
         android:text="SPANISH"
         android:textColor="@color/white"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/b_chinese"
-        app:layout_constraintTop_toBottomOf="@id/b_age" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/b_age"
+        app:layout_constraintTop_toBottomOf="@id/b_vomit" />
 
     <Button
         android:id="@+id/b_chinese"
@@ -105,9 +97,9 @@
         android:alpha=".6"
         android:textColor="@color/white"
         android:text="CHINESE"
-        app:layout_constraintLeft_toRightOf="@id/b_age"
+        app:layout_constraintLeft_toRightOf="@id/b_one"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/b_weight" />
+        app:layout_constraintTop_toBottomOf="@id/b_age" />
     <Button
         android:id="@+id/b_one"
         android:layout_width="175dp"
@@ -117,7 +109,7 @@
         android:text="ONE - ONE"
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/b_puerto"
+        app:layout_constraintRight_toLeftOf="@id/b_chinese"
         app:layout_constraintTop_toBottomOf="@id/b_spanish" />
 
     <Button
@@ -129,20 +121,10 @@
         android:backgroundTint="#247310"
         android:text="I'M PUERTO RICAN"
         android:textColor="@color/white"
-        app:layout_constraintLeft_toRightOf="@id/b_one"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/b_chinese" />
-    <Button
-        android:id="@+id/b_down"
-        android:layout_width="175dp"
-        android:layout_height="100dp"
-        android:alpha=".6"
-        android:backgroundTint="#247310"
-        android:text="I'M DOWN BABY"
-        android:textColor="@color/white"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/b_aint"
-        app:layout_constraintTop_toBottomOf="@id/b_one" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/b_chinese" />
+
 
     <Button
         android:id="@+id/b_aint"
@@ -152,9 +134,9 @@
         android:backgroundTint="#247310"
         android:text="AIN'T GOT NOTHING TO DO WITH THIS"
         android:textColor="@color/white"
-        app:layout_constraintLeft_toRightOf="@id/b_down"
+        app:layout_constraintLeft_toRightOf="@id/b_puerto"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/b_puerto" />
+        app:layout_constraintTop_toBottomOf="@id/b_one" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -167,3 +149,4 @@
 
 
 </android.support.constraint.ConstraintLayout>
+</ScrollView>

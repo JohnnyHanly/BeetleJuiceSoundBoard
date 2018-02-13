@@ -43,18 +43,15 @@ public class ClassicFragment extends Fragment {
         classicSoundpoolMap.put(3, classicSoundPool.load(getActivity(), R.raw.beet_red, 1));
         classicSoundpoolMap.put(4, classicSoundPool.load(getActivity(), R.raw.beet_vomit, 1));
         classicSoundpoolMap.put(5, classicSoundPool.load(getActivity(), R.raw.beet_age, 1));
-        classicSoundpoolMap.put(6, classicSoundPool.load(getActivity(), R.raw.beet_weight, 1));
-        classicSoundpoolMap.put(7, classicSoundPool.load(getActivity(), R.raw.beet_spanish, 1));
-        classicSoundpoolMap.put(8, classicSoundPool.load(getActivity(), R.raw.beet_chinese, 1));
-        classicSoundpoolMap.put(9,classicSoundPool.load(getActivity(),R.raw.beet_1,1));
-        classicSoundpoolMap.put(10,classicSoundPool.load(getActivity(),R.raw.beet_puerto,1));
-        classicSoundpoolMap.put(11,classicSoundPool.load(getActivity(),R.raw.beet_down,1));
-        classicSoundpoolMap.put(12,classicSoundPool.load(getActivity(),R.raw.beet_aint,1));
+        classicSoundpoolMap.put(6, classicSoundPool.load(getActivity(), R.raw.beet_spanish, 1));
+        classicSoundpoolMap.put(7, classicSoundPool.load(getActivity(), R.raw.beet_chinese, 1));
+        classicSoundpoolMap.put(8,classicSoundPool.load(getActivity(),R.raw.beet_1,1));
+        classicSoundpoolMap.put(9,classicSoundPool.load(getActivity(),R.raw.beet_puerto,1));
+        classicSoundpoolMap.put(19,classicSoundPool.load(getActivity(),R.raw.beet_aint,1));
 
 
         bMe = (Button) view.findViewById(R.id.b_me);
         bAge = (Button) view.findViewById(R.id.b_age);
-        bWeight = (Button) view.findViewById(R.id.b_weight);
         bVomit = (Button) view.findViewById(R.id.b_vomit);
         bRed = (Button) view.findViewById(R.id.b_red);
         bCoobee = (Button) view.findViewById(R.id.b_coobee);
@@ -62,7 +59,6 @@ public class ClassicFragment extends Fragment {
         bChinese = (Button) view.findViewById(R.id.b_chinese);
         bOne=(Button) view.findViewById(R.id.b_one);
         bPuerto= (Button) view.findViewById(R.id.b_puerto);
-        bDown= (Button) view.findViewById(R.id.b_down);
         bAint= (Button) view.findViewById(R.id.b_aint);
 
 
@@ -97,46 +93,34 @@ public class ClassicFragment extends Fragment {
                 Play(5,x);
             }
         });
-        bWeight.setOnClickListener(new View.OnClickListener() {
+        bSpanish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(6,x);
             }
         });
-        bSpanish.setOnClickListener(new View.OnClickListener() {
+        bChinese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(7,x);
             }
         });
-        bChinese.setOnClickListener(new View.OnClickListener() {
+        bOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(8,x);
             }
         });
-        bOne.setOnClickListener(new View.OnClickListener() {
+        bPuerto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(9,x);
             }
         });
-        bPuerto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Play(10,x);
-            }
-        });
-        bDown.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Play(11,x);
-    }
-});
         bAint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Play(12,x);
+                Play(10,x);
             }
         });
         return view;

@@ -10,33 +10,36 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int tabs;
-    public PagerAdapter(FragmentManager fragmentManager, int tabs){
+
+    public PagerAdapter(FragmentManager fragmentManager, int tabs) {
         super(fragmentManager);
-        this.tabs=tabs;
+        this.tabs = tabs;
     }
+
     @Override
-    public Fragment getItem(int position){
+    public Fragment getItem(int position) {
 
 
-
-        switch (position){
+        switch (position) {
             case 0:
-                ClassicFragment tab1= new ClassicFragment();
+                ClassicFragment tab1 = new ClassicFragment();
                 return tab1;
             case 1:
-
-
-                InsultsFragment tab2= new InsultsFragment();
+                InsultsFragment tab2 = new InsultsFragment();
                 return tab2;
             case 2:
-                MiscFragment tab3= new MiscFragment();
+                HateFragment tab3 = new HateFragment();
                 return tab3;
-            default:return null;
+            case 3:
+                MiscFragment tab4= new MiscFragment();
+                return tab4;
+            default:
+                return null;
         }
     }
 
     @Override
-    public int getCount(){
+    public int getCount() {
         return tabs;
     }
 }

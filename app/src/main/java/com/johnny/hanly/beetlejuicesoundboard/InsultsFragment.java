@@ -26,8 +26,8 @@ public class InsultsFragment extends Fragment {
     Button bKnock;
     Button bRemember;
     Button bSituation;
-    Button bPsycho;
     Button bWatcha;
+
 
     SoundPool insultSoundPool;
     HashMap<Integer, Integer> insultSoundPoolMap;
@@ -39,20 +39,20 @@ public class InsultsFragment extends Fragment {
         final Vibrator x = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
         insultSoundPoolMap.put(1, insultSoundPool.load(getActivity(), R.raw.beet_takeyoulikeaman, 1));
         insultSoundPoolMap.put(2, insultSoundPool.load(getActivity(), R.raw.beet_killaguy, 1));
-        insultSoundPoolMap.put(3, insultSoundPool.load(getActivity(), R.raw.beet_imistough, 1));
-        insultSoundPoolMap.put(4, insultSoundPool.load(getActivity(), R.raw.beet_hospital, 1));
-        insultSoundPoolMap.put(5, insultSoundPool.load(getActivity(), R.raw.beet_fatboy, 1));
-        insultSoundPoolMap.put(6, insultSoundPool.load(getActivity(), R.raw.beet_fu, 1));
-        insultSoundPoolMap.put(7, insultSoundPool.load(getActivity(), R.raw.beet_suck, 1));
-        insultSoundPoolMap.put(8, insultSoundPool.load(getActivity(), R.raw.beet_knockyouout, 1));
-        insultSoundPoolMap.put(9, insultSoundPool.load(getActivity(), R.raw.beet_take, 1));
-        insultSoundPoolMap.put(10, insultSoundPool.load(getActivity(), R.raw.beet_situation, 1));
-        insultSoundPoolMap.put(11, insultSoundPool.load(getActivity(), R.raw.beet_psycho, 1));
-        insultSoundPoolMap.put(12, insultSoundPool.load(getActivity(), R.raw.beet_watcha, 1));
+        insultSoundPoolMap.put(3, insultSoundPool.load(getActivity(), R.raw.beet_hospital, 1));
+        insultSoundPoolMap.put(4, insultSoundPool.load(getActivity(), R.raw.beet_fatboy, 1));
+        insultSoundPoolMap.put(5, insultSoundPool.load(getActivity(), R.raw.beet_fu, 1));
+        insultSoundPoolMap.put(6, insultSoundPool.load(getActivity(), R.raw.beet_suck, 1));
+        insultSoundPoolMap.put(7, insultSoundPool.load(getActivity(), R.raw.beet_knockyouout, 1));
+        insultSoundPoolMap.put(8, insultSoundPool.load(getActivity(), R.raw.beet_take, 1));
+        insultSoundPoolMap.put(9, insultSoundPool.load(getActivity(), R.raw.beet_situation, 1));
+        insultSoundPoolMap.put(10, insultSoundPool.load(getActivity(), R.raw.beet_watcha, 1));
+
+
 
         bTakeyou = (Button) view.findViewById(R.id.b_takeyou);
         bBadHands = (Button) view.findViewById(R.id.b_badhands);
-        bIsTough = (Button) view.findViewById(R.id.b_tough);
+
         bHospital = (Button) view.findViewById(R.id.b_hospital);
         bFatBoy = (Button) view.findViewById(R.id.b_fatboy);
         bFU = (Button) view.findViewById(R.id.b_FU);
@@ -60,7 +60,7 @@ public class InsultsFragment extends Fragment {
         bKnock = (Button) view.findViewById(R.id.b_knock);
         bRemember = (Button) view.findViewById(R.id.b_remember);
         bSituation = (Button) view.findViewById(R.id.b_situation);
-        bPsycho = (Button) view.findViewById(R.id.b_psycho);
+
         bWatcha = (Button) view.findViewById(R.id.b_watcha);
 
 
@@ -77,66 +77,55 @@ public class InsultsFragment extends Fragment {
                 Play(2, x);
             }
         });
-        bIsTough.setOnClickListener(new View.OnClickListener() {
+        bHospital.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(3, x);
             }
         });
-        bHospital.setOnClickListener(new View.OnClickListener() {
+        bFatBoy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(4, x);
             }
         });
-        bFatBoy.setOnClickListener(new View.OnClickListener() {
+        bFU.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(5, x);
             }
         });
-        bFU.setOnClickListener(new View.OnClickListener() {
+        bSuck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(6, x);
             }
         });
-        bSuck.setOnClickListener(new View.OnClickListener() {
+        bKnock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(7, x);
             }
         });
-        bKnock.setOnClickListener(new View.OnClickListener() {
+        bRemember.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(8, x);
             }
         });
-        bRemember.setOnClickListener(new View.OnClickListener() {
+        bSituation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(9, x);
             }
         });
-        bSituation.setOnClickListener(new View.OnClickListener() {
+        bWatcha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Play(10, x);
             }
         });
-        bPsycho.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Play(11, x);
-            }
-        });
-        bWatcha.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Play(12, x);
-            }
-        });
+
         return view;
 
     }
